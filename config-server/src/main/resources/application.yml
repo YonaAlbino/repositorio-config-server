@@ -1,15 +1,16 @@
 server:
-  port:8082
+  port: 8082
 
 spring:
   application:
-    name:config-server
+    name: config-server
 
-cloud:
-  config:
-    server:
-      git:
+  cloud:
+    config:
+      server:
+        git:
           uri: https://github.com/YonaAlbino/repositorio-config-server.git
           searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
+
